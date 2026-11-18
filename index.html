@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pulse Tweaks : six optis pour ton PC</title>
+  <meta name="description" content="Six optimisations PC pour le jeu, de 15 à 20 €, réglées à distance et suivies sur Discord : Pulse OS, Flux Tuner, BIOS, Chipset, CPU et GPU.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/manrope-latin-wght-normal-DHIcAJRg.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg width="0" height="0" class="sr-sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="i-discord" viewBox="0 0 24 24"><path fill="currentColor" d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.445.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.028C.533 9.046-.319 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.1 14.1 0 0 0 1.226-1.994.076.076 0 0 0-.042-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.009c.12.099.246.198.373.292a.077.077 0 0 1-.007.128 12.3 12.3 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.363 1.225 1.993a.076.076 0 0 0 .084.029 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.331c-1.183 0-2.157-1.086-2.157-2.42 0-1.332.956-2.418 2.157-2.418 1.21 0 2.176 1.095 2.157 2.419 0 1.333-.956 2.419-2.157 2.419Zm7.975 0c-1.183 0-2.157-1.086-2.157-2.42 0-1.332.955-2.418 2.157-2.418 1.21 0 2.176 1.095 2.157 2.419 0 1.333-.946 2.419-2.157 2.419Z"/></symbol>
+        <symbol id="i-cpu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2.5"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2.5V5M15 2.5V5M9 19v2.5M15 19v2.5M2.5 9H5M2.5 15H5M19 9h2.5M19 15h2.5"/></g></symbol>
+        <symbol id="i-gpu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6h17.5a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5H2.5"/><path d="M2.5 4v16"/><circle cx="9" cy="11.5" r="3"/><circle cx="16.5" cy="11.5" r="2"/><path d="M6 17v2.5h7V17"/></g></symbol>
+        <symbol id="i-sliders" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></g></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m6 12.5 3.8 3.8L18 8"/></symbol>
+        <symbol id="i-info" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5"/><path d="M12 7.6v.01" stroke-width="2.2"/></g></symbol>
+        <symbol id="i-arrow-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M6 13l6 6 6-6"/></symbol>
+        <symbol id="i-arrow-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-arrow-out" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 16 16 8M9.5 8H16v6.5"/></symbol>
+        <symbol id="i-chipset" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="4.5" width="15" height="15" rx="2"/><path d="M8.5 8.5h7v7h-7z"/><path d="M8.5 11h7M8.5 13h7M11 8.5v7M13 8.5v7" stroke-width="1.1"/><path d="M8 2.5v2M12 2.5v2M16 2.5v2M8 19.5v2M12 19.5v2M16 19.5v2"/></g></symbol>
+        <symbol id="i-wifi" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9a14 14 0 0 1 19 0"/><path d="M5.5 12.5a9.5 9.5 0 0 1 13 0"/><path d="M8.7 15.8a5 5 0 0 1 6.6 0"/><circle cx="12" cy="19" r=".9" fill="currentColor"/></g></symbol>
+        <symbol id="i-windows" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="1.2"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.2"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.2"/></g></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m6.5 6.5 11 11M17.5 6.5l-11 11"/></symbol>
+      </defs>
+    </svg>
+  <header class="tete">
+    <div class="tete-in">
+      <a class="marque" href="#haut"><img class="logo-img" src="assets/logo-96--yXRToBU.webp" srcset="assets/logo-96--yXRToBU.webp 1x, assets/logo-192-CAVpOoVE.webp 2x" width="27" height="36" alt=""><span>Pulse <em>Tweaks</em></span></a>
+      <nav class="nav" aria-label="Navigation">
+        <a href="#optis">Optis</a><a href="#comment">Comment ça marche</a><a href="#tarifs">Tarifs</a><a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-blanc btn-petit" href="https://discord.gg/pulsetweaks" target="_blank" rel="noopener noreferrer">Rejoindre le Discord</a>
+    </div>
+  </header>
+
+  <main id="haut">
+    <section class="hero">
+      <a class="annonce" href="https://discord.gg/pulsetweaks" target="_blank" rel="noopener noreferrer"><strong>Le diagnostic est gratuit.</strong><span>Ouvre un ticket sur Discord</span></a>
+      <h1>Ton PC, réglé<br>pour le jeu.</h1>
+      <p class="hero-sous">Six optis : Windows, réseau, BIOS, chipset, processeur et carte graphique. Réglées à distance, suivies sur Discord, réversibles.</p>
+      <div class="hero-actions">
+        <a class="btn btn-blanc" href="https://discord.gg/pulsetweaks" target="_blank" rel="noopener noreferrer">Commander sur Discord</a>
+        <a class="btn btn-gris" href="#optis">Voir les optis</a>
+      </div>
+
+      <div class="appli" aria-label="La carte des optis">
+        <div class="appli-barre"><span></span><span></span><span></span><p>Pulse Tweaks</p></div>
+        <div class="appli-corps">
+          <div class="appli-liste">
+            <button class="appli-item est-active" type="button" data-opti="pulseos">
+              <span class="pastille-ic"><svg class="ic" aria-hidden="true"><use href="#i-windows"></use></svg></span>
+              <span><strong>Pulse OS</strong><small>Système · Windows</small></span>
+              <em>20 €</em>
+            </button>
+            <button class="appli-item" type="button" data-opti="flux">
+              <span class="pastille-ic"><svg class="ic" aria-hidden="true"><use href="#i-wifi"></use></svg></span>
+              <span><strong>Flux Tuner</strong><small>Réseau</small></span>
+              <em>20 €</em>
+            </button>
+            <button class="appli-item" type="button" data-opti="bios">
+              <span class="pastille-ic"><svg class="ic" aria-hidden="true"><use href="#i-sliders"></use></svg></span>
+              <span><strong>Advanced BIOS Tuning</strong><small>Carte mère · BIOS</small></span>
+              <em>15 €</em>
+            </button>
+            <button class="appli-item" type="button" data-opti="chipset">
+              <span class="pastille-ic"><svg class="ic" aria-hidden="true"><use href="#i-chipset"></use></svg></span>
+              <span><strong>Chipset Tuner</strong><small>Processeur · Chipset</small></span>
+              <em>20 €</em>
+            </button>
+            <button class="appli-item" type="button" data-opti="cpu">
+              <span class="pastille-ic"><svg class="ic" aria-hidden="true"><use href="#i-cpu"></use></svg></span>
+              <span><strong>CPU Overclocking &amp; Undervolting</strong><small>Processeur</small></span>
+              <em>20 €</em>
+            </button>
+            <button class="appli-item" type="button" data-opti="gpu">
+              <span class="pastille-ic"><svg class="ic" aria-hidden="true"><use href="#i-gpu"></use></svg></span>
+              <span><strong>GPU Overclocking &amp; Undervolting</strong><small>Carte graphique</small></span>
+              <em>15 €</em>
+            </button>
+          </div>
+          <div class="appli-detail" aria-live="polite">
+            <div class="appli-entete">
+              <span class="pastille-ic grande" id="ad-ic"><svg class="ic" aria-hidden="true"><use href="#i-windows"></use></svg></span>
+              <div>
+                <p class="appli-cat" id="ad-cat">Système · Windows</p>
+                <h2 id="ad-nom">Pulse OS</h2>
+              </div>
+            </div>
+            <p class="appli-accroche" id="ad-accroche">Un Windows optimisé de A à Z pour booster vos FPS et éliminer la latence en jeu.</p>
+            <p class="appli-sous">La prestation comprend</p>
+            <ul class="appli-contenu" id="ad-contenu"><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>Windows nettoyé, configuré et allégé</li><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>Réduction de la latence en jeu</li><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>Amélioration des FPS et des 1 % lows</li><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>Limitation des micro-freezes, stutters et variations de frametime</li><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>Installation et configuration via notre application dédiée</li><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>Aucune fonctionnalité essentielle supprimée</li></ul>
+            <div class="appli-pied">
+              <p class="appli-prix" id="ad-prix">20 €</p>
+              <a class="btn btn-blanc btn-petit" href="https://discord.gg/pulsetweaks" target="_blank" rel="noopener noreferrer">Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="duo" id="optis">
+      <h2>Six optis,<br>un seul PC</h2>
+      <div>
+        <p>Chaque opti règle une partie de ta machine : le système, le réseau, le BIOS, le chipset, le processeur ou la carte graphique.</p>
+        <p>Prends-en une, ou plusieurs : décris ta configuration sur Discord, l'équipe t'accompagne.</p>
+      </div>
+    </section>
+    <ol class="lignes">
+        <li class="ligne" id="opti-pulseos">
+          <span class="pastille-ic grande"><svg class="ic" aria-hidden="true"><use href="#i-windows"></use></svg></span>
+          <div class="ligne-texte">
+            <h3>Pulse OS <span class="ligne-badge">La plus demandée</span></h3>
+            <p>Un Windows optimisé de A à Z pour booster vos FPS et éliminer la latence en jeu.</p>
+          </div>
+          <ul class="ligne-tags"><li>Plus de FPS et de meilleurs 1 % lows</li><li>Moins de micro-freezes et de stutters</li></ul>
+          <p class="ligne-prix">20 €</p>
+        </li>
+        <li class="ligne" id="opti-flux">
+          <span class="pastille-ic grande"><svg class="ic" aria-hidden="true"><use href="#i-wifi"></use></svg></span>
+          <div class="ligne-texte">
+            <h3>Flux Tuner</h3>
+            <p>Une connexion stable, un ping propre.</p>
+          </div>
+          <ul class="ligne-tags"><li>Ping plus stable</li><li>Délai de connexion réduit</li></ul>
+          <p class="ligne-prix">20 €</p>
+        </li>
+        <li class="ligne" id="opti-bios">
+          <span class="pastille-ic grande"><svg class="ic" aria-hidden="true"><use href="#i-sliders"></use></svg></span>
+          <div class="ligne-texte">
+            <h3>Advanced BIOS Tuning</h3>
+            <p>Plus de 270 paramètres optimisés automatiquement.</p>
+          </div>
+          <ul class="ligne-tags"><li>Plus de 270 paramètres optimisés</li><li>Latence en jeu réduite</li></ul>
+          <p class="ligne-prix">15 €</p>
+        </li>
+        <li class="ligne" id="opti-chipset">
+          <span class="pastille-ic grande"><svg class="ic" aria-hidden="true"><use href="#i-chipset"></use></svg></span>
+          <div class="ligne-texte">
+            <h3>Chipset Tuner</h3>
+            <p>Le réglage qui va plus loin que le BIOS.</p>
+          </div>
+          <ul class="ligne-tags"><li>Des FPS plus réguliers</li><li>Un système plus réactif</li></ul>
+          <p class="ligne-prix">20 €</p>
+        </li>
+        <li class="ligne" id="opti-cpu">
+          <span class="pastille-ic grande"><svg class="ic" aria-hidden="true"><use href="#i-cpu"></use></svg></span>
+          <div class="ligne-texte">
+            <h3>CPU Overclocking &amp; Undervolting</h3>
+            <p>Un processeur plus rapide, une latence réduite.</p>
+          </div>
+          <ul class="ligne-tags"><li>Plus de performances CPU</li><li>Latence réduite</li></ul>
+          <p class="ligne-prix">20 €</p>
+        </li>
+        <li class="ligne" id="opti-gpu">
+          <span class="pastille-ic grande"><svg class="ic" aria-hidden="true"><use href="#i-gpu"></use></svg></span>
+          <div class="ligne-texte">
+            <h3>GPU Overclocking &amp; Undervolting</h3>
+            <p>Plus de FPS, sans sacrifier la stabilité.</p>
+          </div>
+          <ul class="ligne-tags"><li>Plus de FPS en jeu</li><li>Stabilité préservée</li></ul>
+          <p class="ligne-prix">15 €</p>
+        </li>
+    </ol>
+
+    <section class="bloc" id="comment">
+      <h2 class="centre">Comment ça se passe</h2>
+      <p class="centre sous">Quatre étapes, toutes sur Discord.</p>
+      <ol class="etapes">
+        <li><span class="etape-num">01</span><h3>Ouvrir un ticket</h3><p>Tu ouvres un ticket sur notre Discord et tu décris ta configuration.</p></li>
+        <li><span class="etape-num">02</span><h3>Diagnostic</h3><p>Le diagnostic est gratuit.</p></li>
+        <li><span class="etape-num">03</span><h3>Intervention</h3><p>L&#x27;intervention se fait à distance, avec un suivi sur Discord.</p></li>
+        <li><span class="etape-num">04</span><h3>Contrôle</h3><p>Les vérifications de stabilité sont incluses. Si le résultat te plaît pas, tu redémarres et c&#x27;est remis comme avant.</p></li>
+      </ol>
+    </section>
+
+    <section class="bloc" id="tarifs">
+      <h2 class="centre">Tarifs</h2>
+      <p class="centre sous">Un prix par opti.</p>
+      <div class="prix">
+        <div class="prix-col">
+          <h3>BIOS et carte graphique</h3>
+          <p class="prix-montant">15 €<small>par opti</small></p>
+          <ul><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>Advanced BIOS Tuning</li><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>GPU Overclocking &amp; Undervolting</li></ul>
+          <a class="btn btn-blanc" href="https://discord.gg/pulsetweaks" target="_blank" rel="noopener noreferrer">Commander</a>
+        </div>
+        <div class="prix-col">
+          <h3>Système, réseau, chipset et processeur</h3>
+          <p class="prix-montant">20 €<small>par opti</small></p>
+          <ul><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>Pulse OS</li><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>Flux Tuner</li><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>Chipset Tuner</li><li><svg class="ic-check" aria-hidden="true"><use href="#i-check"></use></svg>CPU Overclocking &amp; Undervolting</li></ul>
+          <a class="btn btn-blanc" href="https://discord.gg/pulsetweaks" target="_blank" rel="noopener noreferrer">Commander</a>
+        </div>
+      </div>
+      <p class="prix-note"><strong>Une question, plusieurs optis ?</strong> Décris ta configuration sur <a href="https://discord.gg/pulsetweaks" target="_blank" rel="noopener noreferrer">Discord</a>.</p>
+    </section>
+
+    <section class="bloc faq" id="faq">
+      <h2>FAQ</h2>
+      <div class="faq-liste">
+          <details class="faq-item" open>
+            <summary>Combien coûte le diagnostic ?<span class="faq-signe" aria-hidden="true"></span></summary>
+            <p>Rien, le diagnostic est gratuit. Tu ouvres un ticket sur Discord et on regarde ta configuration.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Et si le résultat ne me plaît pas ?<span class="faq-signe" aria-hidden="true"></span></summary>
+            <p>Tu redémarres et c&#x27;est remis comme avant, rien d&#x27;autre à faire. Les paramètres sont réversibles.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Comment se passe l&#x27;intervention ?<span class="faq-signe" aria-hidden="true"></span></summary>
+            <p>À distance, avec un suivi sur Discord. Les vérifications de stabilité sont incluses.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Qu&#x27;est-ce qu&#x27;il faut pour Pulse OS ?<span class="faq-signe" aria-hidden="true"></span></summary>
+            <p>Une clé USB d&#x27;au moins 8 Go.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Je peux prendre plusieurs optis ?<span class="faq-signe" aria-hidden="true"></span></summary>
+            <p>Oui. Décris ta configuration sur Discord, l&#x27;équipe t&#x27;accompagne.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Les résultats sont les mêmes pour tout le monde ?<span class="faq-signe" aria-hidden="true"></span></summary>
+            <p>Non, ils dépendent du matériel de chaque PC.</p>
+          </details>
+      </div>
+    </section>
+
+    <section class="final">
+      <h2>Commence par ton diagnostic</h2>
+      <p>Gratuit, sur Discord.</p>
+      <div class="hero-actions">
+        <a class="btn btn-blanc" href="https://discord.gg/pulsetweaks" target="_blank" rel="noopener noreferrer">Ouvrir un ticket</a>
+        <a class="btn btn-gris" href="#optis">Voir les optis</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="pied-in">
+      <div><a class="marque" href="#haut"><img class="logo-img" src="assets/logo-96--yXRToBU.webp" srcset="assets/logo-96--yXRToBU.webp 1x, assets/logo-192-CAVpOoVE.webp 2x" width="27" height="36" alt=""><span>Pulse <em>Tweaks</em></span></a><p class="pied-note">Les résultats dépendent du matériel de chaque PC.</p><p class="pied-note">© 2026 Pulse Tweaks</p></div>
+      <div class="pied-col"><p>Optis</p><a href="#opti-pulseos">Pulse OS</a><a href="#opti-flux">Flux Tuner</a><a href="#opti-bios">Advanced BIOS Tuning</a><a href="#opti-chipset">Chipset Tuner</a><a href="#opti-cpu">CPU Overclocking &amp; Undervolting</a><a href="#opti-gpu">GPU Overclocking &amp; Undervolting</a></div>
+      <div class="pied-col"><p>Pulse Tweaks</p><a href="#comment">Comment ça marche</a><a href="#tarifs">Tarifs</a><a href="#faq">FAQ</a><a href="https://discord.gg/pulsetweaks" target="_blank" rel="noopener noreferrer">Discord</a></div>
+    </div>
+  </footer>
+
+  <script>window.OPTIS = [{"id": "pulseos", "nom": "Pulse OS", "categorie": "Système · Windows", "prix": "20", "tags": ["Plus de FPS et de meilleurs 1 % lows", "Moins de micro-freezes et de stutters"], "badge": "La plus demandée", "accroche": "Un Windows optimisé de A à Z pour booster vos FPS et éliminer la latence en jeu.", "detail": "<p>Pulse OS est un OS custom entièrement conçu et préparé par nos soins. Windows est nettoyé, configuré et allégé pour réduire la latence, améliorer les FPS et les 1&nbsp;% lows, et limiter les micro-freezes, stutters et variations de frametime.</p> <p>Tout est installé et configuré via notre application dédiée, pour un résultat propre et adapté à votre PC. Aucune fonctionnalité essentielle n’est supprimée&nbsp;: vous gardez un Windows complet et stable au quotidien, simplement plus rapide et plus réactif.</p> <p class=\"modal-prereq\"><strong>Prérequis&nbsp;:</strong> une clé USB d’au moins 8&nbsp;Go.</p>", "contenu": ["Windows nettoyé, configuré et allégé", "Réduction de la latence en jeu", "Amélioration des FPS et des 1 % lows", "Limitation des micro-freezes, stutters et variations de frametime", "Installation et configuration via notre application dédiée", "Aucune fonctionnalité essentielle supprimée"], "icone": "i-windows"}, {"id": "flux", "nom": "Flux Tuner", "categorie": "Réseau", "prix": "20", "tags": ["Ping plus stable", "Délai de connexion réduit"], "badge": "", "accroche": "Une connexion stable, un ping propre.", "detail": "<p>Flux Tuner réduit fortement le délai de connexion, stabilise votre ping et accélère les échanges réseau. La différence se ressent directement en jeu, à chaque action.</p> <p>Pas un énième «&nbsp;ping reducer&nbsp;»&nbsp;: une vraie optimisation réseau avancée, pensée pour le compétitif.</p>", "contenu": ["Optimisation réseau avancée de Windows", "Réduction du délai de connexion", "Stabilisation du ping en jeu", "Accélération des échanges réseau", "Réglages pensés pour le jeu compétitif", "Vérification de la stabilité de la connexion"], "icone": "i-wifi"}, {"id": "bios", "nom": "Advanced BIOS Tuning", "categorie": "Carte mère · BIOS", "prix": "15", "tags": ["Plus de 270 paramètres optimisés", "Latence en jeu réduite"], "badge": "", "accroche": "Plus de 270 paramètres optimisés automatiquement.", "detail": "<p>BIOS Tools analyse et ajuste votre BIOS directement via notre application, y compris les options avancées et cachées, pour améliorer les performances, la stabilité et la latence en jeu.</p> <p>Le BIOS est la base de votre PC&nbsp;: sans lui optimisé, votre matériel n’est jamais exploité à 100&nbsp;%.</p>", "contenu": ["Analyse des paramètres BIOS disponibles", "Optimisations avancées selon la configuration", "Réglages des paramètres processeur et mémoire compatibles", "Vérifications de stabilité et de compatibilité", "Analyse des fonctionnalités de gestion énergétique", "Optimisation des paramètres de latence lorsque cela est pertinent"], "icone": "i-sliders"}, {"id": "chipset", "nom": "Chipset Tuner", "categorie": "Processeur · Chipset", "prix": "20", "tags": ["Des FPS plus réguliers", "Un système plus réactif"], "badge": "", "accroche": "Le réglage qui va plus loin que le BIOS.", "detail": "<p>Chipset Tuner intervient directement sur les registres spécifiques du processeur (MSR) et sur la configuration du chipset. Il lève les limites et les économies d’énergie qui ralentissent les temps de réponse du système.</p> <p>Tout passe par notre application&nbsp;: les réglages sont appliqués, puis contrôlés par des tests de stabilité avant d’être validés. En jeu, les images s’enchaînent de façon plus régulière et le système répond plus vite.</p>", "contenu": ["Réglage des registres MSR du processeur", "Optimisation du chipset et des liaisons PCIe", "Configuration des limites de puissance du processeur", "Tests de stabilité et vérification automatique", "Paramètres processeur avancés, absents des menus du BIOS", "Désactivation des économies d’énergie qui freinent la réactivité"], "icone": "i-chipset"}, {"id": "cpu", "nom": "CPU Overclocking & Undervolting", "categorie": "Processeur", "prix": "20", "tags": ["Plus de performances CPU", "Latence réduite"], "badge": "", "accroche": "Un processeur plus rapide, une latence réduite.", "detail": "<p>Nous ajustons finement les fréquences et les tensions de votre processeur, selon les exigences du gaming compétitif.</p> <p>Notre application automatise les calculs, les ajustements et les tests de stabilité. Résultat&nbsp;: de meilleures performances CPU, moins de latence et une expérience de jeu plus fluide et réactive.</p>", "contenu": ["Overclocking du processeur", "Undervolting avancé", "Ajustement des paramètres de fréquence et de tension", "Vérifications et tests de stabilité", "Recherche du meilleur équilibre entre performances, températures et stabilité"], "icone": "i-cpu"}, {"id": "gpu", "nom": "GPU Overclocking & Undervolting", "categorie": "Carte graphique", "prix": "15", "tags": ["Plus de FPS en jeu", "Stabilité préservée"], "badge": "", "accroche": "Plus de FPS, sans sacrifier la stabilité.", "detail": "<p>Nous augmentons les fréquences et ajustons les tensions de votre carte graphique pour trouver le meilleur équilibre entre performances, températures et consommation.</p> <p>Notre application automatise les calculs, les réglages, les tests et la validation de stabilité. Vous profitez de tout le potentiel de votre GPU, avec un fonctionnement stable et maîtrisé.</p>", "contenu": ["Overclocking GPU", "Undervolting GPU", "Optimisation des fréquences mémoire et GPU", "Vérification de la stabilité", "Ajustement des paramètres énergétiques", "Recherche d’un équilibre entre performances et températures"], "icone": "i-gpu"}];</script>
+  <script src="main.js"></script>
+</body>
+</html>
